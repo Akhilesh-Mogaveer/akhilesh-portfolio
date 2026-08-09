@@ -1,0 +1,854 @@
+/*==========================================================
+RESPONSIVE STYLES
+==========================================================*/
+
+/*==========================
+1200px
+==========================*/
+
+@media(max-width:1200px) {
+
+    .container {
+
+        width: 94%;
+
+    }
+
+    .hero-container {
+
+        gap: 50px;
+
+    }
+
+    .hero-left h1 {
+
+        font-size: 4.8rem;
+
+    }
+
+    .hero-left h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+    .section-header h2 {
+
+        font-size: 2.7rem;
+
+    }
+
+}
+
+/*==========================
+992px
+==========================*/
+
+@media(max-width:992px) {
+
+    .menu-btn {
+
+        display: block;
+
+    }
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    
+        gap: 50px;
+    
+        text-align: center;
+    }
+
+    .hero-left {
+        order: 2;
+    }
+    
+    .hero-right {
+        order: 1;
+    }
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-left p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-social {
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .skills-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .project-card,
+
+    .project-card.featured,
+
+    .project-card:last-child {
+
+        grid-column: auto;
+
+        grid-row: auto;
+
+    }
+
+    .cert-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cert-card.featured {
+
+        grid-column: auto;
+
+    }
+
+    .github-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .github-profile {
+
+        position: static;
+
+    }
+
+    .contact-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .hero-stats {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .avatar-card {
+        width: 420px;
+        height: 500px;
+    }
+
+}
+
+/*==========================
+768px
+==========================*/
+
+@media(max-width:768px) {
+
+    section {
+
+        padding: 90px 0;
+
+    }
+
+    .section-header {
+
+        margin-bottom: 55px;
+
+    }
+
+    .section-header h2 {
+
+        font-size: 2.2rem;
+
+    }
+
+    .hero-left h1 {
+
+        font-size: 3.8rem;
+
+    }
+
+    .hero-left h2 {
+
+        font-size: 1.45rem;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .primary-btn,
+
+    .secondary-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    .avatar-card {
+
+        width: 320px;
+
+        height: 420px;
+
+    }
+
+    .avatar {
+
+        width: 160px;
+
+        height: 160px;
+
+    }
+
+    .orbit {
+
+        width: 340px;
+
+        height: 340px;
+
+    }
+
+    .python {
+
+        left: 136px;
+
+    }
+
+    .git {
+
+        left: 136px;
+
+    }
+
+    .sql {
+
+        top: 136px;
+
+    }
+
+    .ml {
+
+        top: 136px;
+
+    }
+
+    .streamlit {
+
+        top: 35px;
+
+        right: 35px;
+
+    }
+
+    .hero-stats {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .timeline {
+
+        padding-left: 30px;
+
+    }
+
+    .timeline::before {
+
+        left: 6px;
+
+    }
+
+    .timeline-dot {
+
+        left: -25px;
+
+    }
+
+    .skills-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .about-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .project-buttons {
+
+        flex-direction: column;
+
+    }
+
+}
+
+/*==========================
+576px
+==========================*/
+
+@media(max-width:576px) {
+
+    .navbar {
+
+        height: 74px;
+
+    }
+
+    .logo-circle {
+
+        width: 45px;
+
+        height: 45px;
+
+    }
+
+    #hero {
+        padding-top: 100px;
+    }
+    
+    .hero-container {
+        gap: 35px;
+    }
+    
+    .hero-left h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-left h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-left p {
+
+        font-size: .95rem;
+
+    }
+
+    .status {
+
+        font-size: .75rem;
+
+        padding: 8px 16px;
+
+    }
+
+    .avatar-card {
+        width: 100%;
+        max-width: 360px;
+        height: 440px;
+        border-radius: 26px;
+    }
+
+    .avatar {
+
+        width: 140px;
+
+        height: 140px;
+
+    }
+
+    .hero-tags {
+
+        gap: 8px;
+
+    }
+
+    .hero-tags span {
+
+        font-size: .72rem;
+
+        padding: 8px 14px;
+
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+
+        padding: 28px;
+
+    }
+
+    .project-content {
+
+        padding: 22px;
+
+    }
+
+    .project-content h3 {
+
+        font-size: 1.35rem;
+
+    }
+
+    .project-metrics {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .tech-stack {
+
+        gap: 8px;
+
+    }
+
+    .about-left {
+
+        padding: 30px;
+
+    }
+
+    .info-card {
+
+        padding: 20px;
+
+    }
+
+    .timeline-card {
+
+        padding: 24px;
+
+    }
+
+    .cert-card {
+
+        padding: 30px;
+
+    }
+
+    .contact-card {
+
+        padding: 28px;
+
+    }
+
+    .footer-content h2 {
+
+        font-size: 1.6rem;
+
+    }
+
+    .footer-social a {
+
+        width: 48px;
+
+        height: 48px;
+
+    }
+
+    .avatar-orb {
+        width: 190px;
+        height: 190px;
+        top: 36%;
+    }
+
+    .avatar-orbit {
+        width: 260px;
+        height: 260px;
+        top: 36%;
+    }
+    
+    .orbit-item {
+        width: 52px;
+        height: 52px;
+    }
+    
+    .orbit-item img {
+        width: 27px;
+        height: 27px;
+    }
+    
+    .avatar-skills {
+        width: 250px;
+        bottom: 25px;
+        gap: 8px;
+    }
+    
+    .avatar-skills span {
+        min-height: 42px;
+        font-size: .68rem;
+    }
+
+}
+
+/*==========================
+400px
+==========================*/
+
+@media(max-width:400px) {
+
+    .hero-left h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+    .section-header h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+    .avatar-card {
+
+        height: 360px;
+
+    }
+
+    .avatar {
+
+        width: 120px;
+
+        height: 120px;
+
+    }
+
+    .orbit {
+
+        display: none;
+
+    }
+
+    .hero-tags {
+
+        justify-content: center;
+
+    }
+
+    .logo h2 {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/*==========================
+LARGE SCREENS
+==========================*/
+
+@media(min-width:1600px) {
+
+    .container {
+
+        max-width: 1400px;
+
+    }
+
+    .hero-left h1 {
+
+        font-size: 6rem;
+
+    }
+
+    .hero-left h2 {
+
+        font-size: 2.3rem;
+
+    }
+
+    .section-header h2 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .avatar-card {
+
+        width: 430px;
+
+        height: 520px;
+
+    }
+
+    .avatar {
+
+        width: 210px;
+
+        height: 210px;
+
+    }
+
+}
+
+@media(max-width:992px) {
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-featured {
+        grid-column: span 2;
+    }
+
+}
+
+
+@media(max-width:680px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-featured {
+        grid-column: span 1;
+    }
+
+    .project-featured h3 {
+        font-size: 1.5rem;
+    }
+
+    .featured-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .project-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:380px) {
+
+    .avatar-card {
+        max-width: 320px;
+        height: 410px;
+    }
+
+    .avatar-orb {
+        width: 170px;
+        height: 170px;
+    }
+
+    .avatar-orbit {
+        width: 235px;
+        height: 235px;
+    }
+
+    .orbit-item {
+        width: 46px;
+        height: 46px;
+    }
+
+    .orbit-item img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .avatar-skills {
+        width: 225px;
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .profile-card {
+        width: 100%;
+        max-width: 360px;
+
+        min-height: 520px;
+
+        padding: 22px;
+
+        border-radius: 26px;
+    }
+
+    .profile-visual {
+        height: 245px;
+    }
+
+    .profile-avatar {
+        width: 175px;
+        height: 175px;
+    }
+
+    .floating-tech {
+        width: 50px;
+        height: 50px;
+
+        border-radius: 15px;
+    }
+
+    .floating-tech img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .tech-python {
+        top: 20px;
+        right: 20px;
+    }
+
+    .tech-sql {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .tech-git {
+        bottom: 20px;
+        right: 15px;
+    }
+
+    .profile-skills {
+        gap: 7px;
+    }
+
+    .profile-skills span {
+        font-size: .68rem;
+    }
+
+}
+
+
+@media(max-width:380px) {
+
+    .profile-card {
+        max-width: 320px;
+        padding: 20px;
+    }
+
+    .profile-visual {
+        height: 220px;
+    }
+
+    .profile-avatar {
+        width: 155px;
+        height: 155px;
+    }
+
+    .profile-footer span {
+        font-size: .6rem;
+    }
+
+}
+
+@media(max-width:992px) {
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .data-visual-card {
+        width: 440px;
+        height: 480px;
+    }
+
+}
+
+
+@media(max-width:576px) {
+
+    .data-visual-card {
+        width: 100%;
+        max-width: 360px;
+
+        height: 430px;
+
+        padding: 24px;
+
+        border-radius: 26px;
+    }
+
+    .data-network {
+        width: 280px;
+        height: 270px;
+    }
+
+    .network-center {
+        width: 85px;
+        height: 85px;
+    }
+
+    .network-center span {
+        font-size: 1.2rem;
+    }
+
+    .network-node {
+        width: 52px;
+        height: 52px;
+
+        border-radius: 15px;
+    }
+
+    .network-node img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .data-flow {
+        gap: 8px;
+
+        font-size: .58rem;
+    }
+
+}
+
+
+@media(max-width:380px) {
+
+    .data-visual-card {
+        max-width: 320px;
+
+        height: 410px;
+
+        padding: 20px;
+    }
+
+    .data-network {
+        width: 250px;
+        height: 250px;
+    }
+
+}

@@ -1,0 +1,677 @@
+/*==========================================================
+animations.css
+==========================================================*/
+
+/*==========================
+KEYFRAMES
+==========================*/
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes rotate {
+
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes counterRotate {
+
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+
+}
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1);
+
+        box-shadow: 0 0 0 rgba(79, 140, 255, .3);
+
+    }
+
+    50% {
+
+        transform: scale(1.15);
+
+        box-shadow: 0 0 20px rgba(79, 140, 255, .4);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+        box-shadow: 0 0 0 rgba(79, 140, 255, .3);
+
+    }
+
+}
+
+@keyframes glow {
+
+    0% {
+
+        box-shadow:
+
+            0 0 35px rgba(79, 140, 255, .25);
+
+    }
+
+    50% {
+
+        box-shadow:
+
+            0 0 70px rgba(79, 140, 255, .45);
+
+    }
+
+    100% {
+
+        box-shadow:
+
+            0 0 35px rgba(79, 140, 255, .25);
+
+    }
+
+}
+
+@keyframes gradientText {
+
+    0% {
+
+        background-position: 0%;
+
+    }
+
+    100% {
+
+        background-position: 300%;
+
+    }
+
+}
+
+@keyframes shine {
+
+    from {
+
+        transform: translateX(-120%);
+
+    }
+
+    to {
+
+        transform: translateX(120%);
+
+    }
+
+}
+
+@keyframes loading {
+
+    to {
+
+        width: 100%;
+
+    }
+
+}
+
+@keyframes scrollDown {
+
+    0% {
+
+        transform: translateY(0);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform: translateY(20px);
+
+        opacity: 0;
+
+    }
+
+}
+
+@keyframes starsMove {
+
+    from {
+
+        transform: translateY(0);
+
+    }
+
+    to {
+
+        transform: translateY(-500px);
+
+    }
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(60px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: none;
+
+    }
+
+}
+
+@keyframes slideLeft {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-60px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: none;
+
+    }
+
+}
+
+@keyframes slideRight {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(60px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: none;
+
+    }
+
+}
+
+@keyframes zoom {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(.85);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+/*==========================
+HERO
+==========================*/
+
+.blur {
+
+    animation:
+
+        float 12s ease-in-out infinite;
+
+}
+
+.avatar {
+
+    animation:
+
+        glow 3s infinite;
+
+}
+
+.avatar-ring {
+
+    animation:
+
+        rotate 22s linear infinite;
+
+}
+
+.hero-left h1 {
+
+    animation:
+
+        fadeUp .9s both;
+
+}
+
+.hero-left h2 {
+
+    animation:
+
+        slideLeft 1.1s both;
+
+}
+
+.hero-left p {
+
+    animation:
+
+        slideLeft 1.3s both;
+
+}
+
+.hero-buttons {
+
+    animation:
+
+        fadeUp 1.5s both;
+
+}
+
+.status {
+
+    animation:
+
+        fadeUp .7s both;
+
+}
+
+.hero-social {
+
+    animation:
+
+        fadeUp 1.7s both;
+
+}
+
+/*==========================
+ORBIT
+==========================*/
+
+.orbit {
+
+    animation:
+
+        rotate 28s linear infinite;
+
+}
+
+.orbit-item {
+
+    animation:
+
+        counterRotate 28s linear infinite;
+
+    transition: .35s;
+
+}
+
+.orbit-item:hover {
+
+    transform: scale(1.12);
+
+}
+
+/*==========================
+BUTTONS
+==========================*/
+
+.primary-btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.primary-btn::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(90deg,
+
+            transparent,
+
+            rgba(255, 255, 255, .35),
+
+            transparent);
+
+    transform: translateX(-120%);
+
+}
+
+.primary-btn:hover::after {
+
+    animation:
+
+        shine .8s linear;
+
+}
+
+.primary-btn:hover,
+
+.secondary-btn:hover {
+
+    transform:
+
+        translateY(-5px);
+
+}
+
+/*==========================
+CARDS
+==========================*/
+
+.project-card,
+
+.skill-category,
+
+.cert-card,
+
+.contact-card,
+
+.info-card,
+
+.timeline-card {
+
+    animation:
+
+        fadeUp .8s both;
+
+}
+
+.project-card:hover {
+
+    transform:
+
+        translateY(-10px) perspective(1200px) rotateX(2deg) rotateY(-2deg);
+
+}
+
+.stat-card:hover {
+
+    transform:
+
+        translateY(-8px);
+
+}
+
+.cert-card:hover {
+
+    transform:
+
+        translateY(-10px);
+
+}
+
+.contact-card:hover {
+
+    transform:
+
+        translateY(-10px);
+
+}
+
+/*==========================
+SOCIAL
+==========================*/
+
+.hero-social a:hover,
+
+.footer-social a:hover {
+
+    transform:
+
+        translateY(-8px) rotate(6deg) scale(1.08);
+
+}
+
+/*==========================
+PROJECT IMAGE
+==========================*/
+
+.project-image img {
+
+    transition:
+
+        transform .8s,
+
+        filter .8s;
+
+}
+
+.project-card:hover img {
+
+    transform: scale(1.08);
+
+    filter:
+
+        brightness(1.08) saturate(1.15);
+
+}
+
+/*==========================
+TECH TAGS
+==========================*/
+
+.skill-list span,
+
+.tech-stack span,
+
+.hero-tags span {
+
+    transition: .35s;
+
+}
+
+.skill-list span:hover,
+
+.tech-stack span:hover,
+
+.hero-tags span:hover {
+
+    transform:
+
+        translateY(-5px);
+
+}
+
+/*==========================
+TIMELINE
+==========================*/
+
+.timeline-dot {
+
+    animation:
+
+        pulse 2s infinite;
+
+}
+
+/*==========================
+SCROLL INDICATOR
+==========================*/
+
+.scroll-indicator span {
+
+    animation:
+
+        scrollDown 2s infinite;
+
+}
+
+/*==========================
+SCROLL REVEAL
+==========================*/
+
+.hidden {
+
+    opacity: 0;
+
+    transform: translateY(70px);
+
+    transition:
+
+        opacity .8s,
+
+        transform .8s;
+
+}
+
+.show {
+
+    opacity: 1;
+
+    transform: none;
+
+}
+
+/* ==========================================================
+   DATA VISUAL ANIMATION
+========================================================== */
+
+.network-center {
+    animation:
+        centerPulse 4s ease-in-out infinite;
+}
+
+
+@keyframes centerPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 45px rgba(79, 140, 255, .2),
+            0 0 80px rgba(124, 58, 237, .1);
+    }
+
+    50% {
+        box-shadow:
+            0 0 60px rgba(79, 140, 255, .28),
+            0 0 100px rgba(124, 58, 237, .16);
+    }
+
+}
+
+
+.network-node {
+    animation:
+        nodeFloat 5s ease-in-out infinite;
+}
+
+.node-python {
+    animation-delay: 0s;
+}
+
+.node-sql {
+    animation-delay: .8s;
+}
+
+.node-scikit {
+    animation-delay: 1.6s;
+}
+
+.node-streamlit {
+    animation-delay: 2.4s;
+}
+
+
+@keyframes nodeFloat {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -5px;
+    }
+
+}
+
+
+/* flowing data line */
+
+.network-line {
+    background-size: 200% 100%;
+
+    animation:
+        dataFlow 3s linear infinite;
+}
+
+
+@keyframes dataFlow {
+
+    0% {
+        background-position: 200% 0;
+        opacity: .3;
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        background-position: -200% 0;
+        opacity: .3;
+    }
+
+}
